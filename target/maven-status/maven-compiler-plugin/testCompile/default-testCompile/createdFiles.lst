@@ -1,0 +1,4 @@
+com\project_automation\utils\Selenium_Methods.class
+com\project_automation\Selenium_Setup.class
+com\project_automation\ConfigSetup.class
+com\project_automation\tests\Selenium_Tests.class
