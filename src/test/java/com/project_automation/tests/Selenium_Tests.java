@@ -64,8 +64,12 @@ public class Selenium_Tests {
 
             // Get Product Details
             sName[i] = AmazonPage.productName().getText();
-            sPrice[i] = AmazonPage.priceSymbol().getText() + AmazonPage.priceWhole().getText() + "." + AmazonPage.priceFraction().getText();
             sRating[i] = AmazonPage.productRating().getAttribute("title");
+            sPrice[i] = AmazonPage.fullPrice().getText();
+
+            // Line Below No Longer Working
+            //sPrice[i] = AmazonPage.priceSymbol().getText() + AmazonPage.priceWhole().getText() + "." + AmazonPage.priceFraction().getText();
+            
             try {
                 sDescription[i] = AmazonPage.productDescription().getText();
             } catch (Exception e) {

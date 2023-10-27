@@ -49,17 +49,22 @@ public class AmazonPage {
 
     // Price Symbol
     public static WebElement priceSymbol() {
-        return driver.findElement(By.xpath("//*[@id='corePriceDisplay_desktop_feature_div']/div[1]/span[1]/span[2]/span[1]"));
+        return driver.findElement(By.xpath("//*[@id='corePriceDisplay_desktop_feature_div']/div[1]/span[2]/span[2]/span[1]"));
     }
 
     // Price Whole
     public static WebElement priceWhole() {
-        return driver.findElement(By.xpath("//*[@id='corePriceDisplay_desktop_feature_div']/div[1]/span[1]/span[2]/span[2]"));
+        return driver.findElement(By.xpath("//*[@id='corePriceDisplay_desktop_feature_div']/div[1]/span[1]/span[2]/span[2]/text()"));
     }
 
     // Price Fraction
     public static WebElement priceFraction() {
-        return driver.findElement(By.xpath("//*[@id='corePriceDisplay_desktop_feature_div']/div[1]/span[1]/span[2]/span[3]"));
+        return driver.findElement(By.xpath("//*[@id='corePriceDisplay_desktop_feature_div']/div[1]/span[2]/span[2]/span[3]"));
+    }
+
+    // Full Price
+    public static WebElement fullPrice() {
+        return driver.findElement(By.xpath("//span[@class='a-offscreen']"));
     }
 
     // Product Rating
