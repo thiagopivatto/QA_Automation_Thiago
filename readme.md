@@ -1,6 +1,6 @@
-## QA Automation Assessment - Thiago Pivatto - Ontop
+## QA Automation - Thiago Pivatto
 
-This is a QA automation project for assessing web pages using Selenium, developed by Thiago Pivatto for Ontop.
+This is a QA automation project for assessing web pages using Selenium, developed by Thiago Pivatto.
 
 ### Prerequisites
 
