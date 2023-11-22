@@ -55,7 +55,6 @@ public class TestRunner {
         if (properties.getProperty("PRODUCT").isEmpty()) {
             properties.setProperty("PRODUCT", "iPhone 12");
         }
-        System.out.println("Welcome to setup for Ontop Assessment:");
         try {
             FileOutputStream fos = new FileOutputStream("config.properties");
             properties.store(fos, "Automation Test Configurations");
